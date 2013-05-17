@@ -12,6 +12,9 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
+*.userprefs
+libnativeCSS.a
+MonoTouch.NativeCSS.dll
 
 # Build results
 [Dd]ebug/
