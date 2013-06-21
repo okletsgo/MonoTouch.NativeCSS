@@ -22,21 +22,21 @@ namespace Samples {
 			// NativeCSS is required one license per each bundle id.
 
 			// sample
-			MonoTouch.NativeCSS.UIApplication.StyleWithCSSString("button { background-color: #a1a1a1; }");
+			MonoTouch.NativeCSS.CSSUIApplication.StyleWithCSSString("button { background-color: #a1a1a1; }");
 
 			// sample
-			//MonoTouch.NativeCSS.UIApplication.UpdateCSSFromURL(new NSUrl ("http", "your ip address", "/path/filename.css"), 3, delegate (bool success, bool different, string content) {
+			//MonoTouch.NativeCSS.CSSUIApplication.UpdateCSSFromURL(new NSUrl("http", "your ip address", "/path/filename.css"), 3, delegate(bool success, bool different, string content)
+			//{
 			//	if (success && different) {
-			//		MonoTouch.NativeCSS.UIApplication.StyleWithCSSString (content);
-			//	}
-			//	else if (!success) {
-			//		MonoTouch.NativeCSS.UIApplication.StyleWithCSSString ("button { background-color: #a1a1a1; }");
+			//		MonoTouch.NativeCSS.CSSUIApplication.StyleWithCSSString(content);
+			//	} else if (!success) {
+			//		MonoTouch.NativeCSS.CSSUIApplication.StyleWithCSSString("button { background-color: #a1a1a1; }");
 			//	}
 			//});
 
 			// sample
-			//var myHandler = new MonoTouch.NativeCSS.UpdateCSSFromURLHandler((bool success, bool different, string content) => { if (success) {}  });
-			//MonoTouch.NativeCSS.UIApplication.UpdateCSSFromURL (new NSUrl ("http", "your ip address", "/path/filename.css"), myHandler);
+			//var myHandler = new MonoTouch.NativeCSS.UpdateCSSFromURLHandler((bool success, bool different, string content) => { if (success) { } });
+			//MonoTouch.NativeCSS.CSSUIApplication.UpdateCSSFromURL(new NSUrl("http", "your ip address", "/path/filename.css"), myHandler);
 
 			return true;
 		}
